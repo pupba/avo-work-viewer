@@ -21,7 +21,19 @@ const items = ['아보카도','올리브엑','올리브포','참기름','트러�
 
 const updateBoxImage = () =>{
     const boxType = document.getElementById('boxSelector').value;
-    document.getElementById('boxImage').innerHTML = `<img src="${boxMap[boxType]}" alt="Selected Box">`
+    document.getElementById('boxImage').innerHTML = `
+    <img src="${boxMap[boxType]}" alt="Selected Box" style="display:inline-block; vertical-align:top;">
+    <div id="info-container" style="margin-left:20px;">
+        <div style="margin-bottom:10px;">
+            <label>발주처 </label>
+            <input class="texts" type="text">
+        </div>
+        <div style="margin-bottom:10px;">
+            <label>보내는 이 </label>
+            <input class="texts" type="text">
+        </div>
+    </div>    
+    `;
 }
 
 const handleSlotChange = (event) =>{

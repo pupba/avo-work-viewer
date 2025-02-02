@@ -6,6 +6,9 @@
     font-weight: 400;
     font-size: 20px;
 }
+#sub-container{
+    display: flex;
+}
 #boxSelector{
     width: 150px;
     padding: 8px;
@@ -15,7 +18,8 @@
     font-size: 20px;
 }
 #boxImage {
-    width: 300px;
+    display: flex;
+    width: 600px;
     text-align: center;
     margin: 20px auto;
 }
@@ -24,6 +28,32 @@
     width: 300px;
     height: 300px;
     margin: 5px auto;
+}
+#boxImage > #info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.texts {
+    padding: 10px 15px; /* 상하 10px, 좌우 15px */
+    font-family: 'Jua', serif; /* 폰트 설정 */
+    font-weight: 400;
+    font-size: 30px; /* 글씨 크기 */
+    color: #ff004c; /* 글씨 색상 */
+    border: 2px solid #ccc; /* 테두리 색상 */
+    border-radius: 8px; /* 둥근 테두리 */
+    background-color: #f9f9f9; /* 연한 배경색 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 약간의 그림자 효과 */
+    outline: none; /* 포커스 시 기본 테두리 제거 */
+    transition: all 0.3s ease; /* 부드러운 전환 효과 */
+    text-align: center;
+}
+.texts:focus{
+    border-color: #007bff;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
 }
 #traySection {
     text-align: center;
