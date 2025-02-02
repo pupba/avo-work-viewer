@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@100..900&display=swap');
+.container {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Jua',serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+#boxSelector{
+    width: 150px;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Jua',serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+#boxImage {
+    width: 300px;
+    text-align: center;
+    margin: 20px auto;
+}
+#boxImage > img{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin: 5px auto;
+}
+#traySection {
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+.contentImage {
+    height: 465px;
+}
+/* 메인 컨테이너 (row 방향) */
+#contentImages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px; /* 슬롯 간 간격 */
+    flex-wrap: wrap; /* 화면 너비에 따라 줄바꿈 */
+}
+
+/* 각 슬롯 컨테이너 */
+.slotContainer {
+    display: flex;
+    margin: 10px;
+}
+
+/* 이미지-드롭다운 그룹 (column 방향) */
+.itemGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* 이미지와 드롭다운 사이 간격 */
+}
+
+/* 이미지 스타일 */
+.contentImage {
+    border-radius: 10px;
+    border-style:dashed;
+    border-color: black;
+    object-fit: cover;
+}
+
+/* 드롭다운 스타일 */
+.slotSelector {
+    width: 150px;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Jua',serif;
+    font-weight: 400;
+    font-size: 20px;
+}
